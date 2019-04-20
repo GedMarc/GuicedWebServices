@@ -22,25 +22,30 @@
         <dependency>
             <groupId>com.jwebmp.guicedee.servlets</groupId>
             <artifactId>guiced-servlets</artifactId>
+            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.metro</groupId>
             <artifactId>webservices-rt</artifactId>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.glassfish.metro</groupId>
             <artifactId>webservices-api</artifactId>
+            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.pfl</groupId>
             <artifactId>pfl-basic</artifactId>
+            <type>jar</type>
         </dependency>
 
         <dependency>
@@ -60,18 +65,21 @@
         <dependency>
             <groupId>com.jwebmp.inject.extensions</groupId>
             <artifactId>guice-servlet</artifactId>
+            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.jwebmp.guicedee.servlets</groupId>
             <artifactId>guiced-undertow</artifactId>
             <scope>test</scope>
+            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>io.undertow</groupId>
             <artifactId>undertow-servlet</artifactId>
             <optional>true</optional>
+            <type>jar</type>
         </dependency>
 
         <dependency>
