@@ -26,6 +26,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>javax.activation</artifactId>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <type>jar</type>
