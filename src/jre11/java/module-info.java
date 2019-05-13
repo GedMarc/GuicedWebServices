@@ -4,6 +4,7 @@ module com.jwebmp.guiced.webservices {
 	requires undertow.servlet;
 	requires javax.servlet.api;
 	requires com.jwebmp.guicedservlets;
+
 	requires webservices.rt;
 	requires webservices.api;
 
