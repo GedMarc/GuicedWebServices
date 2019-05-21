@@ -13,14 +13,13 @@ public class WebServiceServletModule
 	public void onBind(com.jwebmp.guicedservlets.services.GuiceSiteInjectorModule module)
 	{
 		StringBuilder url = new StringBuilder(baseWSUrl + "*");
-
-/*		module.bind(WebServiceContext.class)
-		    .toInstance(GuiceManagedInstanceResolver.webServiceContext);*/
-
-
-		module.bind(com.sun.xml.ws.transport.http.servlet.WSServlet.class)
+/*
+		module.bind(WebServiceContext.class)
+		    .toInstance(GuiceManagedInstanceResolver.webServiceContext);
+*/
+		module.bind( CxfNonSpring.class)
 		      .in(Singleton.class);
 		module.serve$(url.toString())
-		      .with(com.sun.xml.ws.transport.http.servlet.WSServlet.class);
+		      .with(CxfNonSpring.class);
 	}
 }
