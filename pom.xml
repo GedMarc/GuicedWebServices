@@ -31,66 +31,31 @@
             <type>jar</type>
         </dependency>
 
-
         <dependency>
             <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>javax.activation</artifactId>
             <type>jar</type>
         </dependency>
 
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <type>jar</type>
         </dependency>
-<!--
 
-        <dependency>
-            <groupId>org.glassfish.metro</groupId>
-            <artifactId>webservices-rt</artifactId>
-            <type>jar</type>
-        </dependency>
--->
-
-<!--
-        <dependency>
-            <groupId>org.glassfish.metro</groupId>
-            <artifactId>webservices-api</artifactId>
-            <type>jar</type>
-            <exclusions>
-                <exclusion>
-                    <groupId>jakarta.annotation</groupId>
-                    <artifactId>jakarta.annotation-api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
--->
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
-            <version>3.3.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-transports-http</artifactId>
-            <version>3.3.2</version>
         </dependency>
         <!-- Jetty is needed if you're are not using the CXFServlet -->
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-transports-http-jetty</artifactId>
-            <version>3.3.2</version>
         </dependency>
-
-
-        <!--
-                <dependency>
-                    <groupId>org.glassfish.pfl</groupId>
-                    <artifactId>pfl-basic</artifactId>
-                    <type>jar</type>
-                </dependency>
-        -->
 
         <dependency>
             <groupId>io.undertow</groupId>
