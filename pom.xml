@@ -25,7 +25,7 @@
             <type>jar</type>
         </dependency>
 
-       <dependency>
+        <dependency>
             <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>jakarta.activation</artifactId>
             <type>jar</type>

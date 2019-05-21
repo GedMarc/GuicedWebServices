@@ -36,15 +36,18 @@ public class GuicedWebServiceTypeBinder
 						                     .newInstance();
 						Endpoint endpoint = Endpoint.create(o);
 
-						String path = WSContext.baseWSUrl + "" + (anno.name()
-						                                              .isEmpty() ? "/" + calledType.getSimpleName() : anno.name());
+						String path = (anno.name()
+						                   .isEmpty() ? "/" + calledType.getSimpleName() : anno.name());
 
-						if(WSContext.port != null)
+						if (WSContext.port != null)
 						{
+							path = WSContext.baseWSUrl + path;
 							String endpointPath = WSContext.protocol + "://" + WSContext.listeningAddress + ":" +
-							                      WSContext.port  + path;
+							                      WSContext.port + path;
 
 							endpoint.publish(endpointPath, o);
+							LogFactory.getLog(GuicedWebServiceTypeBinder.class)
+							          .info("WS Endpoint Active on Default WSContext Settings : " + endpointPath);
 						}
 						else
 						{
@@ -52,12 +55,11 @@ public class GuicedWebServiceTypeBinder
 							ServerFactoryBean factory = new ServerFactoryBean();
 							factory.setBus(BusFactory.getDefaultBus());
 							factory.setServiceClass(o.getClass());
-							factory.setAddress(WSContext.baseWSUrl + path);
+							factory.setAddress(path);
 							factory.create();
+							LogFactory.getLog(GuicedWebServiceTypeBinder.class)
+							          .info("WS Endpoint Active on Servlet Provider " + path);
 						}
-
-						LogFactory.getLog(GuicedWebServiceTypeBinder.class)
-						          .info("WS Endpoint Active : " + path);
 					}
 					catch (Exception e)
 					{
