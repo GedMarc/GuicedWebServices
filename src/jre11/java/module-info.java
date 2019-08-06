@@ -5,8 +5,8 @@ module com.jwebmp.guiced.webservices {
 	requires javax.servlet.api;
 	requires com.jwebmp.guicedservlets;
 
-	requires java.activation;
 	requires jakarta.activation;
+
 	requires webservices.api;
 	requires org.apache.cxf.core;
 	requires org.apache.cxf.transport.http;
