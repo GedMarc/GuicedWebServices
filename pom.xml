@@ -23,99 +23,99 @@
             <groupId>com.jwebmp.guicedee.servlets</groupId>
             <artifactId>guiced-servlets</artifactId>
             <type>jar</type>
-        </dependency>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jakarta.activation</artifactId>
             <type>jar</type>
-        </dependency>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>javax.activation</artifactId>
             <type>jar</type>
-        </dependency>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <type>jar</type>
-        </dependency>
+            </dependency>
 
         <dependency>
             <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-frontend-jaxws</artifactId>
-        </dependency>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-transports-http</artifactId>
-        </dependency>
+            <artifactId>cxf-rt-transports-http</artifactId><type>jar</type>
+            </dependency>
         <!-- Jetty is needed if you're are not using the CXFServlet -->
         <dependency>
             <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-transports-http-jetty</artifactId>
-        </dependency>
+            <artifactId>cxf-rt-transports-http-jetty</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty.undertow</groupId>
-            <artifactId>undertow-core</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+            <artifactId>undertow-core</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty.undertow</groupId>
-            <artifactId>undertow-servlet</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+            <artifactId>undertow-servlet</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty.undertow</groupId>
-            <artifactId>undertow-websockets-jsr</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty.undertow</groupId>
+            <artifactId>undertow-websockets-jsr</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>com.jwebmp.inject.extensions</groupId>
             <artifactId>guice-servlet</artifactId>
             <type>jar</type>
-        </dependency>
+            </dependency>
 
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>javax.activation</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>javax.activation</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>com.jwebmp.guicedee.servlets</groupId>
             <artifactId>guiced-undertow</artifactId>
             <type>jar</type>
-        </dependency>
+            </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-        </dependency>
+            <artifactId>junit-jupiter-api</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-        </dependency>
+            <artifactId>hamcrest-all</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-        </dependency>
+            <artifactId>assertj-core</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-        </dependency>
+            <artifactId>mockito-core</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.glassfish.metro</groupId>
             <artifactId>webservices-api</artifactId>
-            <version>2.4.3</version>
-        </dependency>
+            <version>2.4.3</version><type>jar</type>
+            </dependency>
 
     </dependencies>
 
