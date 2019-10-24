@@ -1,4 +1,4 @@
-package com.jwebmp.guiced.webservices;
+package com.guicedee.guicedservlets.webservices;
 
 public class WSContext
 {
@@ -14,7 +14,7 @@ public class WSContext
 	/**
 	 * A separate port to run the Web Services on - The do not filter through the main handler
 	 */
-	public static Integer port;// = 6006;
+	public static Integer port = 6006;
 	/**
 	 * The protocol the WS is listening on
 	 */

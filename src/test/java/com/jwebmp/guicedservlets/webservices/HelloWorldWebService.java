@@ -1,4 +1,4 @@
-package com.jwebmp.guiced.webservices;
+package com.guicedee.guicedservlets.webservices;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

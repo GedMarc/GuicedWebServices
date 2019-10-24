@@ -1,7 +1,7 @@
-package com.jwebmp.guiced.webservices;
+package com.guicedee.guicedservlets.webservices;
 
 import com.google.inject.AbstractModule;
-import com.jwebmp.guicedinjection.interfaces.IGuiceModule;
+import com.guicedee.guicedinjection.interfaces.IGuiceModule;
 
 public class WSTestBinder
 		extends AbstractModule
