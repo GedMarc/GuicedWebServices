@@ -1,10 +1,3 @@
-import com.guicedee.guicedinjection.interfaces.IGuiceConfigurator;
-import com.guicedee.guicedinjection.interfaces.IGuicePostStartup;
-import com.guicedee.guicedservlets.services.IGuiceSiteBinder;
-import com.guicedee.guicedservlets.webservices.implementations.WebServiceScannerConfig;
-import com.guicedee.guicedservlets.webservices.implementations.WebServiceServletModule;
-import com.guicedee.guicedservlets.webservices.implementations.WebServiceStarterPostLoad;
-
 module com.guicedee.guicedservlets.webservices {
 	exports com.guicedee.guicedservlets.webservices;
 
@@ -27,11 +20,11 @@ module com.guicedee.guicedservlets.webservices {
 	requires com.fasterxml.jackson.databind;
 	requires java.validation;
 
-	provides IGuiceSiteBinder with WebServiceServletModule;
+	provides com.guicedee.guicedservlets.services.IGuiceSiteBinder with com.guicedee.guicedservlets.webservices.implementations.WebServiceServletModule;
 
 
-	provides IGuicePostStartup with WebServiceStarterPostLoad;
-	provides IGuiceConfigurator with WebServiceScannerConfig;
+	provides com.guicedee.guicedinjection.interfaces.IGuicePostStartup with com.guicedee.guicedservlets.webservices.implementations.WebServiceStarterPostLoad;
+	provides com.guicedee.guicedinjection.interfaces.IGuiceConfigurator with com.guicedee.guicedservlets.webservices.implementations.WebServiceScannerConfig;
 
 	opens  com.guicedee.guicedservlets.webservices.implementations to com.google.guice;
 	opens  com.guicedee.guicedservlets.webservices to com.google.guice;

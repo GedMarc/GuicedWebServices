@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>com.guicedee.servlets</groupId>
-        <artifactId>servlets-parent</artifactId>
+        <groupId>com.guicedee</groupId>
+        <artifactId>guicedee-projects</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.guicedee.servlets</groupId>
     <artifactId>guiced-web-services</artifactId>
     <packaging>jar</packaging>
 
@@ -19,107 +19,16 @@
     <url>https://github.com/GedMarc/GuicedWebServices</url>
 
     <dependencies>
-  <!--      <dependency>
-            <groupId>com.guicedee.servlets</groupId>
-            <artifactId>guiced-servlets</artifactId>
-            <type>jar</type>
-        </dependency>-->
-
-   <!--     <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>jakarta.activation</artifactId>
-            <type>jar</type>
-        </dependency>-->
-
-<!--
-        <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <type>jar</type>
-        </dependency>
--->
-
-  <!--      <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>undertow-websockets-jsr</artifactId>
-            <type>jar</type>
-            <optional>true</optional>
-        </dependency>
 
         <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>undertow-core</artifactId>
-            <type>jar</type>
-            <optional>true</optional>
-        </dependency>-->
-
-  <!--      <dependency>
-            <groupId>com.guicedee.services.extensions</groupId>
-            <artifactId>guice-servlet</artifactId>
-            <type>jar</type>
-        </dependency>-->
-
-        <dependency>
-            <groupId>com.guicedee.servlets</groupId>
+            <groupId>com.guicedee</groupId>
             <artifactId>guiced-undertow</artifactId>
             <type>jar</type>
         </dependency>
-
-    <!--    <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>undertow-servlet</artifactId>
-            <optional>true</optional>
-        </dependency>-->
-
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>org.apache.cxf</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-        </dependency>
-<!--
-        <dependency>
-            <groupId>jakarta.ws.rs</groupId>
-            <artifactId>jakarta.ws.rs-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>jakarta.xml.ws</groupId>
-            <artifactId>jakarta.xml.ws-api</artifactId>
-        </dependency>-->
-
-    <!--    <dependency>
-            <groupId>javax.jws</groupId>
-            <artifactId>javax.jws-api</artifactId>
-        </dependency>
--->
-<!--
-
-        <dependency>
-            <groupId>com.guicedee.services</groupId>
-            <artifactId>jakarta.annotation-api</artifactId>
-        </dependency>
--->
-
-
     </dependencies>
 
     <scm>
