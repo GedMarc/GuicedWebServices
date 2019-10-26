@@ -1,7 +1,6 @@
 package com.guicedee.guicedservlets.webservices.implementations;
 
 import io.github.classgraph.ClassInfo;
-import org.apache.cxf.frontend.ServerFactoryBean;
 import com.guicedee.guicedinjection.GuiceContext;
 import com.guicedee.guicedinjection.interfaces.IGuicePostStartup;
 import com.guicedee.guicedservlets.webservices.WSContext;
