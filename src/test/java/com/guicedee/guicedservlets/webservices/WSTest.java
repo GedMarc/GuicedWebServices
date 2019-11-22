@@ -24,6 +24,9 @@ class WSTest
 		LogFactory.setGroupLevel("javax.xml.bind",Level.INFO);
 		Undertow ud = GuicedUndertow.boot("localhost", 6004);
 		System.out.println("Started Server");
+
+
+
 		ud.stop();
 	}
 }

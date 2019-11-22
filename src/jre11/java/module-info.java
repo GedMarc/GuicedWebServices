@@ -21,9 +21,6 @@ module com.guicedee.guicedservlets.webservices {
 	requires java.validation;
 
 	provides com.guicedee.guicedservlets.services.IGuiceSiteBinder with com.guicedee.guicedservlets.webservices.implementations.WebServiceServletModule;
-
-
-	provides com.guicedee.guicedinjection.interfaces.IGuicePostStartup with com.guicedee.guicedservlets.webservices.implementations.WebServiceStarterPostLoad;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceConfigurator with com.guicedee.guicedservlets.webservices.implementations.WebServiceScannerConfig;
 
 	opens  com.guicedee.guicedservlets.webservices.implementations to com.google.guice;
