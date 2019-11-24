@@ -54,7 +54,6 @@ public class CxfNonSpring extends CXFNonSpringServlet
 				          .log(Level.FINER, "Unable to bind Web Service for [" + calledType.getCanonicalName() + "]. This is usually  because it is an internal one", e);
 			}
 		}
-
 	}
 
 	@Override
