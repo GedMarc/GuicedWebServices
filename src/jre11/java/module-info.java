@@ -15,7 +15,7 @@ module com.guicedee.guicedservlets.webservices {
 	requires org.apache.cxf;
 
 	requires java.xml.ws;
-	requires javax.jws;
+	requires java.jws;
 	requires io.github.classgraph;
 	requires com.fasterxml.jackson.databind;
 	requires java.validation;
